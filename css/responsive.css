@@ -1,0 +1,11 @@
+@media all (max-width: 992px) and (max-width: 768px) {
+    #portfolio figure {
+        flex-basis: 50%;
+    }
+}
+
+@media all (max-width: 768px) and (max-width: 480px) {
+    #portfolio figure {
+        flex-basis: 100%;
+    }
+}
