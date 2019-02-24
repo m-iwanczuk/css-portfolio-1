@@ -20,6 +20,37 @@ section {
     padding: 60px 0;
 }
 
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px;
+}
+
+button,
+#form-button {
+    border: 1px solid #007bff;
+    background-color: transparent;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+button a,
+#form-button a {
+    color: #333;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+button:hover,
+#form-button:hover {
+    background-color: #007bff;
+}
+
+button:hover a,
+#form-button:hover a {
+    color: #fff;
+}
+
 /* header */
 
 #main-header {
@@ -53,26 +84,9 @@ section {
     color: #007bff;
 }
 
-button {
-    border: 1px solid #007bff;
-    background-color: transparent;
-    text-transform: uppercase;
-    padding: 10px;
-}
 
-button a {
-    color: #333;
-    text-decoration: none;
-    transition: all 0.4s;
-}
 
-button:hover {
-    background-color: #007bff;
-}
 
-button:hover a {
-    color: #fff;
-}
 
 /* nav */
 
@@ -86,6 +100,7 @@ button:hover a {
     padding: 10px 0;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 #main-nav ul {
@@ -122,7 +137,7 @@ button:hover a {
 
 #about {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     text-transform: uppercase;
     flex-direction: column;
     align-items: center;
@@ -135,6 +150,7 @@ button:hover a {
 }
 
 #about figure img {
+    width: 100%;
     border-radius: 50%;
     padding: 40px;
 }
@@ -149,26 +165,35 @@ button:hover a {
 /* porfolio */
 
 #portfolio {
-    width: 100%;    
+    padding-top: 15px;
+    margin-top: 15px;
+    text-align: center;
+    background-color: lightgray;
+}
+
+#portfolio h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px;
+}
+
+#portfolio div {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    background-color: #ccc;
-    padding: 0;
-    margin-top: 15px;
-    align-items: center;
+    flex-direction: row;
+    align-content: center;
     justify-content: center;
-    text-align: center;
+    padding: 0 5%;
 }
 
 #portfolio figure {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
     margin: 0;
+    padding: 0;
     flex-basis: 25%;
-}
-
-#h2-portfolio {
-    margin: 0 auto;
-    justify-items: center;
 }
 
 #photo-portfolio {
@@ -178,9 +203,100 @@ button:hover a {
 }
 
 #photo-portfolio img {
-    margin: 0;
-    padding: 0;
-    flex-basis: 25%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     height: 200px;
     object-fit: cover;
 }
+
+figcaption {
+    position: absolute;
+    opacity: 0;
+    line-height: 200px; 
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgba(0, 123, 255, 0.6);
+    opacity: 0;
+    
+}
+
+figure:hover figcaption {
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+
+/* contact */
+
+#contact-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+#contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+#contact-form #name,
+#contact-form #email {
+    flex-basis: 49%;
+    align-items: baseline;
+    height: 35px;
+    padding-left: 5px;
+
+}
+#contact-form textarea {
+    flex-basis: 100%;
+    align-items: baseline;
+    margin-top: 15px;
+    padding-left: 5px;
+
+}
+
+#contact-form #form-button {
+    margin-top: 15px;
+}
+
+#social-icons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.fab {
+    color: #007bff;
+    font-size: 35px;
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70px;
+    background-color: lightgray;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    color: #333;
+}
+
+/* footer p {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+} */
