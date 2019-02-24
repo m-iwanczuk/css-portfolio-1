@@ -14,6 +14,7 @@ hr {
     height: 3px;
     width: 100px;
     background-color: #007bff;
+    margin-bottom: 30px;
 }
 
 section {
@@ -26,28 +27,24 @@ h2 {
     margin: 20px;
 }
 
-button,
-#form-button {
+button {
     border: 1px solid #007bff;
     background-color: transparent;
     text-transform: uppercase;
     padding: 10px;
 }
 
-button a,
-#form-button a {
+button a {
     color: #333;
     text-decoration: none;
     transition: all 0.4s;
 }
 
-button:hover,
-#form-button:hover {
+button:hover {
     background-color: #007bff;
 }
 
-button:hover a,
-#form-button:hover a {
+button:hover a {
     color: #fff;
 }
 
@@ -131,6 +128,11 @@ button:hover a,
 
 #main-nav ul li:hover a {
     color: #007bff;
+}
+
+.menu-label,
+#menu {
+    display: none;
 }
 
 /* about */
