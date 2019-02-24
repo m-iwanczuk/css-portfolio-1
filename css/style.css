@@ -278,7 +278,7 @@ figure:hover figcaption {
 }
 
 #contact .social-icons {
-    
+
 }
 
 #social-icons {
@@ -294,7 +294,7 @@ figure:hover figcaption {
 
 }
 
-.fab:hover a {
+.fab:hover {
     color: gray;
 }
 
